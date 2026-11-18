@@ -1,6 +1,5 @@
 import { AbstractControl } from '@angular/forms';
 
-/** Returns a user-friendly message for the first error of a control, once it was touched. */
 export function getErrorMessage(control: AbstractControl): string | null {
   const errors = control.errors;
   if (!errors || !(control.touched || control.dirty)) return null;
